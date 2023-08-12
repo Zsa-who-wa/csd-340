@@ -35,7 +35,8 @@ a:hover {
 }
 
 a:visited {
-  /* Add your desired styling here */
+  color: #C299FF;
+  font-weight: bold;
 }
 
 .sentence {
