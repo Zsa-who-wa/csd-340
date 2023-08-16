@@ -5,10 +5,8 @@ container {
 }
 
 h1 {
-  color: "Tyrian Purple";
-  background-color: Lavender;
-  border: 1px #D6A800;
-  padding: 10px;
+  background-color: black;
+  color: white;
 }
 
 h2 {
