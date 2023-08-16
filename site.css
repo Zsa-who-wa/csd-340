@@ -19,14 +19,14 @@ h2 {
 }
 
 h3 {
-  font-color: #630330;
+  color: #630330;
   background-color: #E6E6FA;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h4 {
-  font-color: #630330;
+  color: #630330;
   background-color: #E6E6FA;
   border: 1px #D6A800;
   padding: 10px;
@@ -46,8 +46,4 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: hotpink;
-}
-
-body {
-  background-color: lightblue;
 }
