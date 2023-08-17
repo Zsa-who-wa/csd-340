@@ -5,45 +5,45 @@ div {
 }
 
 h1 {
-  color: #000080;
-  background-color: #FFFFE0;
+  color: #FFFFFF;
+  background-color: #97006A;
   border: 1px #D6A800;
-  padding: 10px;
+  padding: 10px;;
 }
 
 h2 {
-  color: #000080;
-  background-color: #FFFFE0;
+  color: #FFFFFF;
+  background-color: #97006A;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h3 {
-  color: #000080;
-  background-color: #FFFFE0;
+  color: #FFFFFF;
+  background-color: #97006A;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h4 {
-  color: #000080;
-  background-color: #FFFFE0;
+  color: #FFFFFF;
+  background-color: #97006A;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 /* unvisited link */
 a:link {
-  color: #00008B;
+  color: #00A123;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #0000CD;
+  color: #8E6400;
 }
 
 /* mouse over link */
 a:hover {
-  color: #0000CD;
+  color: #D59600;
 }
