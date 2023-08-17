@@ -34,16 +34,16 @@ h4 {
 
 /* unvisited link */
 a:link {
-  color: red;
+  color: blue;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: dark grey;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: dark blue;
 }
