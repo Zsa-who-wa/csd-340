@@ -5,45 +5,45 @@ div {
 }
 
 h1 {
-  color: white;
-  background-color: black;
+  color: #000080;
+  background-color: #FFFFE0;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h2 {
-  color: white;
-  background-color: black;
+  color: #000080;
+  background-color: #FFFFE0;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h3 {
-  color: white;
-  background-color: black;
+  color: #000080;
+  background-color: #FFFFE0;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 h4 {
-  color: white;
-  background-color: black;
+  color: #000080;
+  background-color: #FFFFE0;
   border: 1px #D6A800;
   padding: 10px;
 }
 
 /* unvisited link */
 a:link {
-  color: DodgerBlue;
+  color: #00008B;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: DarkBlue;
+  color: #0000CD;
 }
 
 /* mouse over link */
 a:hover {
-  color: DeepSkyBlue;
+  color: #0000CD;
 }
