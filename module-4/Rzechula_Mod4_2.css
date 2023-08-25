@@ -1,0 +1,49 @@
+/* Prof. John Woods: Assignment 4.2 */
+
+/* Apply CSS Grid with three columns */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10%;
+}
+
+.image-item{
+  border: 1px solid #97006A;
+  text-align: center;
+}
+
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+    color: rgba(151, 0, 106, 1); /* Optional: purple color using RGBA */
+}
+
+h3 {
+    text-align: center;
+    color: rgba(151, 0, 106, 1); /* Optional: purple color using RGBA */
+}
+
+/* Center the image */
+figure {
+    text-align: center;
+}
+
+/* Apply font style and size to figure caption */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(151, 0, 106, 1); /* Optional: purple color using RGBA */
+}
+
+/* Add underline on :hover for links */
+a:hover {
+    text-decoration: underline;
+}
+
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
