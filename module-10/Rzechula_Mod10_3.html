@@ -1,0 +1,85 @@
+<!-- Prof. James Woods: Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang="em">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  
+    <meta http-equiv="author" content="Wendy Rzechula"/>
+    <meta name="description" content="Assignment 10.3: JavaScript - Part 2"/>
+    <meta name="keywords" content="HTML, CSS"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    
+    <!-- Link to external CSS stylesheet -->
+
+    <script>
+      function displayImage(imageFile){
+        var newImage = document.getElementById("sunsetImage");
+        var newNode = document.createElement("img");
+        newNode.id = "sunsetImage";
+        newNode.src = imageFile;
+        newNode.alt = "Sunset Image";
+        newNode.className = "sunsetImage";
+        newNode.style.width = "400px";
+        newNode.style.height = "300px";
+        newImage.parentNode.replaceChild(newNode, newImage);
+        }
+
+      function onClickImage(imageFile){
+        displayImage(imageFile);
+      }
+    </script>
+</head>
+
+<body>
+
+    <br/>
+
+    <!-- Page Heading -->
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>   
+    
+    <br/>
+
+    <!-- Container for content -->
+    <div>
+      <a href="#" 
+         onmouseover="wing.src='wing2.jpg';"
+         onmouseout="wing.src='wing1.jpg';"
+      >
+	<img border="0" name="wing" src="wing1.jpg">
+      </a>
+    </div>
+
+    <div 
+         onmouseover="this.style.color='orange';" 
+         onmouseout="this.style.color='black';"
+      >
+        Roll over the image to see the sunset.
+    </div>
+
+<br/>
+
+    <div>	
+      <a href="#"
+         onmouseover="field.src='field1.jpg';" 
+         onmouseout="field.src='field1.jpg';"
+         onclick="onClickImage('field2.jpg');"
+      >
+	<img border="0" name="field" src="field1.jpg">
+      </a>
+    </div>
+
+      <div 
+         onmouseover="this.style.color='orange';" 
+         onmouseout="this.style.color='black';"
+      >
+         Click on the image above to see the sunset below.
+      </div>
+
+    <div>
+       <img id="sunsetImage" class="sunsetImage" src="default.jpg">
+    </div>
+
+</body>
+
+</html>
