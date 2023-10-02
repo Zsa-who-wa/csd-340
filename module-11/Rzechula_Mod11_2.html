@@ -1,0 +1,95 @@
+<!-- Prof. James Woods: Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  
+    <meta name="author" content="Wendy Rzechula"/>
+    <meta name="description" content="Assignment 11.2: JavaScript - Part 3"/>
+    <meta name="keywords" content="HTML, CSS"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+</head>
+
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1> 
+
+    <!-- Directions for User -->
+    <div> 
+      <p>Enter your To Do List items below, then click the ADD button. </p> 
+      <p>To see the current items on your list, click the DISPLAY button. </p> 
+      <p>To remove the last item entered, click DELETE Last Entry. </p> 
+    </div> 
+  
+      <!-- Inputfield for adding items -->
+      <input type="text" id="inputText" placeholder="Enter Text Here">
+      
+      <!-- Add, Delete Last Item and Dispaly buttons -->
+      <button id="addButton"> Add </button>
+      <button id="deleteLastButton"> Delete Last Entry </button>
+      <button id="displayButton"> Display </button>
+
+    <!-- To Do List container -->
+    <ul id="toDoList" style="list-style-type: none;">  </ul>
+
+    <script>
+       //Initializing empty array to store To Do List items
+       const toDoList = [];
+
+         //Function to add an item to the To Do List
+         function addToDo() {
+         var inputText = document.getElementById('inputText').value.trim();
+
+         //Checks if the input is not empty
+         if (inputText !== "") {
+           toDoList.push(inputText);
+           alert("Item Added: " + inputText);
+           document.getElementById('inputText').value = "";
+         }
+       }
+
+         //Function that deletes the last item entered to the To Do List
+         function deleteLastEntry() {
+           if (toDoList.length > 0) {
+             var deletedItem = toDoList.pop();
+             alert("Deleted: " + deletedItem);
+           }
+         }
+
+         //Function that displays the To Do List
+         function displayList() {
+           var toDoListContainer = document.getElementById("toDoList");
+           toDoListContainer.innerHTML = ""; //Clears previous list
+
+           for (var i = 0; i < toDoList.length; i++) {
+             
+             //Creates a list item for each item in the To Do List
+             var listItem = document.createElement('li');
+             listItem.textContent = (i + 1) + "." + toDoList[i];
+             toDoListContainer.appendChild(listItem); //Appends the item to the list
+           }
+         }
+
+         //Add event listeners to the buttons
+         document.getElementById('addButton').addEventListener('click', addToDo);
+         document.getElementById('deleteLastButton').addEventListener('click', deleteLastEntry);
+         document.getElementById('displayButton').addEventListener('click', displayList);
+    </script>
+
+</body>
+
+</html>
+
+<!--
+SOURCES:
+JavaScript Tutorial. (2023). https://www.w3schools.com/js/default.asp
+
+JavaScript Topics. Blackboard. Retrieved September 29, 2023, from https://cyberactive.bellevue.edu/ultra/courses/_520090_1/cl/outline
+
+W3resource. (2023, April 24). JavaScript: Add items in a blank array and display the items. https://www.w3resource.com/javascript-exercises/javascript-array-exercise-13.php
+
+viv_007 and as5853535. (2021, July 6). How to remove an added list items using JavaScript ? https://www.geeksforgeeks.org/how-to-remove-an-added-list-items-using-javascript/
+
+Haverbeke, M. (2018). Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming (3rd ed., p. Chapter15). William Pollock. https://eloquentjavascript.net/10_modules.html
+//-->
