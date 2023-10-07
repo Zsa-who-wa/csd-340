@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+  <!-- Prof. John Woods: Assignment 3.3 -->
+   
+  <meta charset="UTF-8">
+  <meta name="author" content="Wendy Rzechula"/>
+  <meta name="description" content="Assignment 12.2: JavaScript - Part 4"/>
+  <meta name="keywords" content="HTML, CSS"/>
+
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <link rel="stylesheet" type="text/css" href="Rzechula_Mod12_2.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="side-by-side left-div">
+            <h3>Top 10 Favorite Books</h3>
+            <ol id="sortTopTenBooks">
+                <li>The Notebook</li>
+                <li>The Boy in the Striped Pyjamas</li>
+                <li>Don't Fall Off The Mountain</li>
+                <li>Out On A Limb</li>
+                <li>Harry Potter Series</li>
+                <li>The Fault in Our Stars</li>
+                <li>The Help</li>
+                <li>Selected Poems & Letters of Emily Dickinson</li>
+                <li>The Picture of Dorian Gray</li>
+                <li>The Lovely Bones</li>
+                <li>Green Eggs and Ham</li>
+            </ol>
+        </div>
+        
+        <div class="side-by-side right-div">
+            <ul>
+            <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <li>CSS Styling - side-by-side divs</li>
+                <li>HSL & HSLA Color Properties</li>
+                <li>Correct Image Formatting</li>
+                <li>Pattern Recognition in Fonts</li>
+                <li>How Our Brains Recall Memories</li>
+            </ul>
+        </div>
+
+        <div class="sortingButtons">
+          <button onclick="sortAtoZ()"> Top to Bottom </button>
+          <button onclick="sortZtoA()"> Bottom to Top </button>
+        </div>
+
+        <br/> 
+    
+        <div class="last" style="text-align: right;">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+    </div> <!-- end of "container" -->
+
+    <script>
+      var bookTitles = [
+        "The Notebook",
+        "The Boy in the Striped Pyjamas",
+        "Don't Fall Off The Mountain",
+        "Out On A Limb",
+        "Harry Potter Series",
+        "The Fault in Our Stars",
+        "The Help",
+        "Selected Poems & Letters of Emily Dickinson",
+        "The Picture of Dorian Gray",
+        "The Lovely Bones",
+        "Green Eggs and Ham"
+      ];
+
+    function sortAtoZ() {
+        bookTitles.sort();
+        displayBooks();
+      }
+
+    function sortZtoA() {
+        bookTitles.reverse();
+        displayBooks();
+      }
+
+   function displayBooks() {
+    var bookList = document.querySelector(".left-div ol");
+    bookList.innerHTML = '';
+
+    for (var i = 0; i < bookTitles.length; i++) {
+      var listItem = document.createElement("li");
+      listItem.textContent = bookTitles[i];
+      bookList.appendChild(listItem);
+      }
+    }
+    </script>
+
+</body>
+</html>
+
+<!--
+SOURCES:
+JavaScript Tutorial. (2023). https://www.w3schools.com/js/default.asp
+
+JavaScript Topics. Blackboard. Retrieved September 29, 2023, from https://cyberactive.bellevue.edu/ultra/courses/_520090_1/cl/outline
+
+W3resource. (2023, April 24). JavaScript: Add items in a blank array and display the items. https://www.w3resource.com/javascript-exercises/javascript-array-exercise-13.php
+
+viv_007 and as5853535. (2021, July 6). How to remove an added list items using JavaScript ? https://www.geeksforgeeks.org/how-to-remove-an-added-list-items-using-javascript/
+
+Haverbeke, M. (2018). Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming (3rd ed., p. Chapter15). William Pollock. https://eloquentjavascript.net/10_modules.html
+//-->

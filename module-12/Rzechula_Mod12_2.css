@@ -1,0 +1,69 @@
+/* Prof. John Woods: Assignment 3.3 */
+
+/* Center the h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Set the width of side-by-side divs to 45% */
+.side-by-side {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+/* Set the font weight of h3 tags to 500 */
+h3 {
+    font-weight: 500;
+}
+
+/* Set the font weight of lists to 300 */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Apply a red border with 15px border-radius to ordered list and its title */
+.left-div {
+    text-align: left;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: decimal inside;
+}
+
+/* Remove auto indent of Order List */
+ol {
+    padding: 10px;
+}
+
+/* Apply a red dashed border with 15px border-radius to unordered list and its title */
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: inside upper-roman;
+}
+
+/* Add underline on :hover for links */
+a:hover {
+    text-decoration: underline;
+}
+
+.sortingButtons {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+
+
+
+
