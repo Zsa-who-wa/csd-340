@@ -1,0 +1,72 @@
+/* Prof. John Woods: bioSite*/
+
+/* Apply CSS Grid with three columns */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10%;
+}
+
+.image-item{
+  text-align: center;
+}
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+    font: 48px Georgia Pro Cond Semibold, serif;
+    color: #120097;
+}
+
+h2 {
+    margin-left: 7%; 
+    margin-right: 7%;
+    color: #139608;
+    font: 28px Georgia Pro Cond Semibold, serif;
+}
+
+hr {
+    height: 5px; 
+    background-color: #120097; 
+    width: 85%; 
+    margin: 0 auto; /* Center the HR */
+}
+
+p  {
+    color: #261E63;
+    font: 16px Arial, sans-serif;
+}
+    
+/* Center the image */
+figure {
+    text-align: center;
+}
+
+/* Apply font style and size to figure caption */
+figcaption {
+    font: 16px Arial, sans-serif;
+    color: #261E63;
+}
+
+/* Styles for navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #1F0F96;
+  border-bottom: solid 15px #139608;
+}
+
+/* Styles for navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+/* Hover styles for navbar links*/
+#navbar a:hover {
+  background-color: #139608;
+  color: #1F0F96;
+}
